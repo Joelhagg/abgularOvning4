@@ -1,0 +1,11 @@
+<p>animals works!</p>
+
+<div>
+    <ul>
+        <li *ngFor="let animal of allAnimals">
+            <div *ngIf="animal.isFed">
+                {{'Djur: ' + animal.animal + '. Storlek:' + animal.size + '. Ålder:' + animal.age + '. Matad: ' + animal.isFed}}
+            </div>
+        </li>
+    </ul>
+</div>
